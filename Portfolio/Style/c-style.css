@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(75, 12, 134, 0.733);
+    z-index: 1000;
+  }
+  
+  .left-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .left-logo img {
+    width: 45px;
+    margin-right: 10px;
+    margin-left: 120px;
+  }
+  
+  .check-button {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .my-checkbox {
+    display: none;
+  }
+  .menu-toggle i {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  
+  }
+  
+  .nav-links li {
+    padding: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(169, 77, 255);
+    text-shadow: 0 0 30px rgb(87, 0, 168);
+  }
+  
+  .nav-links a.active {
+    text-decoration: underline;
+    color: #a37cf0;
+  }
+
+  .contact-section {
+    padding: 120px 20px;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #b187e2, #aa62c9, #610ba8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #b187e2, #aa62c9, #610ba8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #9072ce;
+}
+
+footer {
+    background-color: rgba(57, 4, 107, 0.397);
+    color: white;
+    padding: 30px 20px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 25px;
+  }
+  
+  .footer-services h3 {
+    font-size: 20px;
+  }
+  .footer-services li {
+    font-size: 12px;
+    color: gray;
+    list-style: none;
+  }
+  .footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer-social {
+    display: flex;
+  }
+  .Follow {
+    text-align: center;
+  }
+  .footer-social li {
+    list-style: none;
+  }
+  
+  .footer-social a {
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgba(180, 173, 173, 0.74);
+    text-decoration: none;
+    margin: 0 2px; 
+    transition: 0.3s;
+  }
+  
+  .footer-social a:hover {
+    background: #6837c2;
+  }
+
+  
+  @media screen and (max-width: 760px) {
+    
+    .check-button {
+      display: block;
+    }
+  
+    main {
+      margin-left: 0;
+    }
+    .left-logo img {
+      margin-left: 20px;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 70px;
+      right: -100vw;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.5s ease-in-out;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+  
+    .my-checkbox:checked ~ .nav-links {
+      right: 0;
+      display: flex;
+    }
+  }
+  
+  

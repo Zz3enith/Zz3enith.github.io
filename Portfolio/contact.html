@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/c-style.css">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="left-logo">
+                <img src="./Images/JGSG5895-removebg-preview.png" alt="icon">
+                <h2>KI<span style="background:linear-gradient(to right, #b187e2, #aa62c9, #610ba8ce);
+                    background-size: 200%;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: animate-gradient 1.5s;">CODES</span></h2>
+            </div>
+            <nav>
+                <input type="checkbox" class="my-checkbox" id="check">
+                <label for="check" class="check-button">
+                    <i class='bx bx-menu'></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label class="menu-toggle">
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </label>
+        </header>
+    </div>
+
+    <section class="contact-section">
+        <h1>Contact Me</h1>
+        <p>Let's collaborate! Feel free to reach out through the form below or via social media.</p>
+        
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>KICODES</h2>
+                <p>Your Vision, My Code.</p>
+            </div>
+    
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Portfolio Website Creation</li>
+                    <li>Freelance Projects</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+    
+            <div class="Follow">
+                <h3>Follow Me!</h3>
+                <ul class="footer-social">
+                    <li><a href="github"><i class='bx bxl-github'></i></a></li>
+                    <li><a href="github"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="github"><i class='bx bxl-facebook'></i></a></li>
+                </ul> 
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 KICODES | All Rights Reserved.</p>
+        </div>
+    </footer>                
+</body>
+</html>
